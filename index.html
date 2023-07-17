@@ -4,25 +4,104 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Responsive Layout</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./asset/css/style.css" />
   </head>
-  <body class="debug">
+  <body class="">
     <header>
       <nav class="d_flex container">
-        <div class="logo"></div>
-        <div class="menu d_lg_none"></div>
-        <div class="menu_desktop d_none d_lg_block"></div>
+        <div class="logo">
+          <img src="./asset/img/logo.png" alt="logo" />
+        </div>
+        <div class="menu d_lg_none">
+          <i class="fa-solid fa-bars fa-xl" style="color: #ffffff"></i>
+        </div>
+        <div class="menu_desktop d_none d_lg_block">
+          <a href="#">Planning</a>
+          <a href="#">Testimonials</a>
+          <a href="#">Features</a>
+          <a href="#">About Us</a>
+          <a href="#" class="bnt">Get Started</a>
+        </div>
       </nav>
     </header>
     <!-- header -->
     <main>
       <div class="container mag_botton">
-        <div class="d_flex">
-          <div class="col_12 col_md_8"></div>
-          <div class="col_12 col_md_4"></div>
-          <div class="col_12 col_md_4"></div>
-          <div class="col_12 col_md_4"></div>
-          <div class="col_12 col_md_4"></div>
+        <div class="d_flex card_app">
+          <div class="col_12 col_md_8 d_flex">
+            <h2>Get a demo application</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Facere
+              sint doloribus quo ex labore quaerat repudiandae consectetur
+              debitis dicta?
+            </p>
+            <a href="#" class="bnt btn_card">
+              <i class="fa-brands fa-apple fa-sm" style="color: #ffffff"></i>
+              App Store
+            </a>
+            <img src="./asset/img/phone.png" alt="phone" />
+          </div>
+          <div class="col_12 col_md_4 d_column">
+            <i
+              class="fa-solid fa-file-code fa-2xl icon_card"
+              style="color: #0385fd"
+            ></i>
+            <h2>Clean Code</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui
+              reiciendis asperiores veniam odit accusamus pariatur minima
+              laboriosam similique?
+            </p>
+          </div>
+          <div class="col_12 col_md_4 d_column">
+            <i
+              class="fa-solid fa-compass-drafting fa-2xl icon_card"
+              style="color: #0385fd"
+            ></i>
+            <h2>Web Design</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui
+              reiciendis asperiores veniam odit accusamus pariatur minima
+              laboriosam similique?
+            </p>
+          </div>
+          <div class="col_12 col_md_4 d_column">
+            <i
+              class="fa-solid fa-laptop-code fa-2xl icon_card"
+              style="color: #0385fd"
+            ></i>
+            <h2>Developement</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui
+              reiciendis asperiores veniam odit accusamus pariatur minima
+              laboriosam similique?
+            </p>
+          </div>
+          <div class="col_12 col_md_4 d_column">
+            <i
+              class="fa-solid fa-bullhorn fa-2xl icon_card"
+              style="color: #0385fd"
+            ></i>
+            <h2>Branding</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo qui
+              reiciendis asperiores veniam odit accusamus pariatur minima
+              laboriosam similique?
+            </p>
+          </div>
         </div>
       </div>
       <!-- first section -->

@@ -4,10 +4,16 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+  font-family: "Roboto", sans-serif;
+}
 
 header {
   background-color: var(--rly--header);
   margin-bottom: 1.25rem;
+}
+img {
+  width: 100%;
 }
 footer {
   background-color: var(--rly--footer);
@@ -46,12 +52,17 @@ footer {
   --rly--secondary: #9792e4;
   --rly--text--footer: #fdc15f;
   --rly--footer: #333333;
+  --rly--light: #ffffff;
+  --rly--dark: #000000;
+  --rly--text--content: #63798c;
 }
 .d_flex {
   display: flex;
   flex-wrap: wrap;
+  gap: 1.5625rem;
 }
 .d_column {
+  display: flex;
   flex-direction: column;
 }
 .d_row {
@@ -68,9 +79,15 @@ footer {
   width: 80%;
   margin: 0 auto;
 }
+.bnt {
+  background-color: var(--rly--light);
+  color: var(--rly--dark);
+  padding: 0.625rem 1rem;
+  border-radius: 25px;
+}
 .col_12 {
   width: 100%;
-  padding: 0.625rem;
+  padding: 2rem 1.5rem;
 }
 .col_8 {
   width: calc(100% / 12 * 8);
@@ -87,14 +104,60 @@ footer {
 .mag_botton {
   margin-bottom: 1.25rem;
 }
+.fa-2xl {
+  font-size: 5em;
+}
 /* end utility */
 
 /* header */
 header nav {
   justify-content: space-between;
+  align-items: center;
+  padding: 1.25rem 0;
+}
+a {
+  text-decoration: none;
+  color: var(--rly--light);
+  margin-right: 1rem;
+  font-size: 1.25rem;
 }
 /* end header */
-
+/* main */
+/* application */
+.card_app div:first-child {
+  padding-bottom: 0;
+}
+.card_app div {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--rly--primary);
+  border-radius: 1rem;
+}
+.card_app h2 {
+  color: var(--rly--text);
+  padding-bottom: 1.625rem;
+}
+.card_app p {
+  text-align: center;
+  font-weight: 500;
+  color: var(--rly--text--content);
+  padding-bottom: 2rem;
+  line-height: 1.7rem;
+}
+.icon_card {
+  padding-top: 2.25rem;
+  padding-bottom: 3.5rem;
+}
+.btn_card {
+  background-color: var(--rly--text);
+  color: var(--rly--light);
+  font-size: 0.7rem;
+  font-weight: 500;
+  padding: 0.4rem 2rem;
+  letter-spacing: 0.125rem;
+  margin-bottom: 1.25rem;
+}
+/* end application */
 /* media query */
 
 @media screen and (min-width: 376px) {
@@ -124,6 +187,9 @@ header nav {
   .col_lg_4 {
     width: calc(100% / 12 * 4);
     padding: 0.625rem;
+  }
+  .d_lg_row {
+    flex-direction: row;
   }
 }
 /* end media query */
