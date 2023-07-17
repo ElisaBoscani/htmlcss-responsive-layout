@@ -177,6 +177,21 @@ a {
     justify-content: space-evenly;
   }
 }
+
+@media screen and (min-width: 376px) {
+  .card_app div {
+    gap: 0;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .d_lg_flex {
+    gap: 0;
+  }
+  img {
+    width: 50%;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .d_lg_block {
     display: block;
@@ -190,6 +205,17 @@ a {
   }
   .d_lg_row {
     flex-direction: row;
+  }
+  .card_app div {
+    gap: 0;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+  }
+  .d_lg_flex {
+    gap: 0;
+  }
+  img {
+    width: 50%;
   }
 }
 /* end media query */
