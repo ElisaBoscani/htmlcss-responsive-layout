@@ -7,6 +7,7 @@
 
 header {
   background-color: var(--rly--header);
+  margin-bottom: 1.25rem;
 }
 /* end global */
 
@@ -20,6 +21,11 @@ header {
   height: 20px;
 
   background-color: antiquewhite;
+}
+.debug [class^="col_"] {
+  height: 100px;
+  background-color: lightcoral;
+  border: 1px solid black;
 }
 
 /* end debug */
@@ -35,6 +41,12 @@ header {
 .d_flex {
   display: flex;
 }
+.d_column {
+  flex-direction: column;
+}
+.d_row {
+  flex-direction: row;
+}
 .d_none {
   display: none;
 }
@@ -45,6 +57,21 @@ header {
   max-width: 1152px;
   width: 80%;
   margin: 0 auto;
+}
+.col_12 {
+  width: 100%;
+}
+.col_8 {
+  width: calc(100% / 12 * 8);
+}
+.col_6 {
+  width: calc(100% / 12 * 6);
+}
+.col_4 {
+  width: calc(100% / 12 * 4);
+}
+.mag_botton {
+  margin-bottom: 1.25rem;
 }
 /* end utility */
 
@@ -61,6 +88,19 @@ header nav {
   }
   .d_lg_none {
     display: none;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .col_md_8 {
+    width: calc(100% / 12 * 8);
+  }
+  .col_md_4 {
+    width: calc(100% / 12 * 4);
+  }
+  .d_md_row {
+    flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 
