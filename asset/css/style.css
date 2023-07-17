@@ -10,7 +10,7 @@ body {
 
 header {
   background-color: var(--rly--header);
-  margin-bottom: 1.25rem;
+  margin-bottom: 3.25rem;
 }
 img {
   width: 100%;
@@ -65,6 +65,9 @@ footer {
   display: flex;
   flex-direction: column;
 }
+.justify_content {
+  justify-content: center;
+}
 .d_row {
   flex-direction: row;
 }
@@ -79,6 +82,11 @@ footer {
   width: 80%;
   margin: 0 auto;
 }
+.container_content {
+  max-width: 1152px;
+  width: 70%;
+  margin: 0 auto;
+}
 .bnt {
   background-color: var(--rly--light);
   color: var(--rly--dark);
@@ -88,10 +96,14 @@ footer {
 .col_12 {
   width: 100%;
   padding: 2rem 1.5rem;
+  justify-content: center;
+  align-items: center;
 }
 .col_8 {
   width: calc(100% / 12 * 8);
   padding: 0.625rem;
+  justify-content: center;
+  align-items: center;
 }
 .col_6 {
   width: calc(100% / 12 * 6);
@@ -128,8 +140,6 @@ a {
   padding-bottom: 0;
 }
 .card_app div {
-  justify-content: center;
-  align-items: center;
   background-color: var(--rly--primary);
   border-radius: 1rem;
 }
@@ -158,20 +168,52 @@ a {
   margin-bottom: 1.25rem;
 }
 /* end application */
+/* strategic */
+.strategic {
+  background-color: var(--rly--secondary);
+}
+.strategic h2 {
+  color: var(--rly--light);
+  padding-top: 2.25rem;
+  padding-bottom: 2.25rem;
+}
+.strategic p {
+  color: var(--rly--light);
+  line-height: 1.7rem;
+  font-size: 1rem;
+  font-weight: 300;
+}
+.strategic_card {
+  background-color: var(--rly--light);
+  margin-bottom: 2.25rem;
+  border-radius: 1.25rem;
+}
+.arrow {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: var(--rly--secondary);
+  align-content: center;
+  justify-content: center;
+}
+
+/* end strategici */
 /* media query */
 
 @media screen and (min-width: 376px) {
   .col_md_8 {
-    width: calc(100% / 12 * 8);
+    width: calc((100% / 12) * 8 - 16px);
     padding: 0.625rem;
+    margin: 10px 8px;
   }
   .col_md_6 {
     width: calc(100% / 12 * 6);
     padding: 0.625rem;
   }
   .col_md_4 {
-    width: calc(100% / 12 * 4);
+    width: calc((100% / 12) * 4 - 16px);
     padding: 0.625rem;
+    margin: 10px 8px;
   }
   .justify_md {
     justify-content: space-evenly;
@@ -192,7 +234,7 @@ a {
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 376px) and (max-width: 1200px) {
   .d_lg_block {
     display: block;
   }
@@ -202,9 +244,11 @@ a {
   .col_lg_4 {
     width: calc(100% / 12 * 4);
     padding: 0.625rem;
+    align-items: center;
   }
-  .d_lg_row {
-    flex-direction: row;
+  .d_lg_column {
+    display: flex;
+    flex-direction: column;
   }
   .card_app div {
     gap: 0;
@@ -213,6 +257,9 @@ a {
   }
   .d_lg_flex {
     gap: 0;
+  }
+  .card_app p {
+    text-align: left;
   }
   img {
     width: 50%;
