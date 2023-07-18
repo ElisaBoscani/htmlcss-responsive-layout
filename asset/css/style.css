@@ -119,6 +119,9 @@ footer {
 .fa-2xl {
   font-size: 5em;
 }
+.padding_botton {
+  padding-bottom: 3.125rem;
+}
 /* end utility */
 
 /* header */
@@ -207,59 +210,159 @@ a {
 }
 
 /* end strategici */
+/* testimonila */
+.testimonial {
+  text-align: center;
+  padding-top: 2.25rem;
+}
+.testimonial span {
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+.testimonial h2 {
+  color: var(--rly--secondary);
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+}
+.testimonial p {
+  font-weight: 500;
+  line-height: 2.125rem;
+}
+.testimonial_card {
+  background-color: var(--rly--secondary);
+  border-radius: 1.5rem;
+  text-align: center;
+  padding: 0.625rem;
+}
+
+.testimonial_card img {
+  width: 8.25rem;
+  height: 8.25rem;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-top: 2.25rem;
+}
+.testimonial_card p {
+  color: var(--rly--light);
+  font-weight: 300;
+  line-height: 2.125rem;
+  padding-bottom: 1.25rem;
+  font-size: 0.9rem;
+}
+.testimonial_card span {
+  color: var(--rly--light);
+  text-transform: uppercase;
+  margin-bottom: 1.25px;
+}
+.testimonial_content {
+  padding-bottom: 1.5rem;
+}
+/* end testimonial */
+
+/* expert */
+.expert {
+  background-color: var(--rly--secondary);
+  margin-top: 3.25rem;
+}
+.expert_card {
+  background-color: var(--rly--light);
+  margin-top: 0.9375rem;
+  padding: 1.9375rem;
+  border-radius: 1.25rem;
+}
+
+.expert h2 {
+  color: var(--rly--light);
+  padding-top: 3.25rem;
+  padding-bottom: 2rem;
+  font-size: 2rem;
+  text-align: center;
+}
+.expert_card span {
+  color: var(--rly--secondary);
+  font-size: 3.25rem;
+  font-weight: bold;
+  margin-bottom: 0.9375rem;
+}
+.expert_card h3 {
+  color: var(--rly--secondary);
+  margin-bottom: 0.9375rem;
+}
+.expert_card p {
+  margin-bottom: 1rem;
+  line-height: 2rem;
+  font-size: 0.8rem;
+}
+.expert_card a {
+  background-color: var(--rly--secondary);
+}
+/* end expert */
 /* media query */
 
-@media screen and (min-width: 376px) {
-  .col_md_8 {
-    width: calc((100% / 12) * 8 - 16px);
-    padding: 0.625rem;
-    margin: 10px 8px;
-  }
-  .col_md_6 {
-    width: calc(100% / 12 * 6);
-    padding: 0.625rem;
-  }
-  .col_md_4 {
-    width: calc((100% / 12) * 4 - 16px);
-    padding: 0.625rem;
-    margin: 10px 8px;
-  }
-  .justify_md {
-    justify-content: space-evenly;
-  }
-}
-
-@media screen and (min-width: 376px) {
-  .card_app div {
-    gap: 0;
-    flex-wrap: nowrap;
-    align-items: flex-start;
-  }
-  .d_lg_flex {
-    gap: 0;
-  }
-  img {
-    width: 50%;
-  }
-}
-
-@media screen and (max-width: 800px) {
-  .d_md_column {
-    display: flex;
-    flex-direction: column;
-  }
+@media screen and (min-width: 800px) {
   .col_md_12 {
     width: 100%;
     padding: 2rem 1.5rem;
     justify-content: center;
     align-items: center;
   }
+
+  .col_md_8 {
+    width: calc((100% / 12) * 8 - 16px);
+    padding: 1.625rem;
+    margin: 10px 8px;
+  }
+  .col_md_6 {
+    width: calc((100% / 12) * 6 - 16px);
+    padding: 0.625rem;
+    margin: 10px 8px;
+  }
+  .col_md_4 {
+    width: calc((100% / 12) * 4 - 16px);
+    padding: 1.625rem;
+    margin: 10px 8px;
+    justify-content: flex-start;
+  }
+  .justify_md {
+    justify-content: space-evenly;
+  }
+
+  .d_md_column {
+    display: flex;
+    flex-direction: column;
+  }
+  .justify_content {
+    justify-content: flex-start;
+  }
   .card_app p {
     text-align: left;
   }
+  .d_flex {
+    gap: 0;
+  }
+  .btn_card {
+    width: 41%;
+  }
+  .phone {
+    width: 60%;
+  }
+  .strategic h2 {
+    font-size: 3.25rem;
+  }
+  .testimonial_card {
+    text-align: left;
+    justify-content: space-evenly;
+    margin-top: 1.25rem;
+  }
+  .testimonial_content {
+    width: 73%;
+  }
+  .testimonial_card img {
+    margin-top: 0;
+  }
 }
 
-@media screen and (min-width: 376px) and (min-width: 1200px) {
+@media screen and (min-width: 1200px) {
   .d_lg_block {
     display: block;
   }
@@ -267,7 +370,7 @@ a {
     display: none;
   }
   .col_lg_4 {
-    width: calc(100% / 12 * 4);
+    width: calc(100% / 12 * 4 - 16px);
     padding: 0.625rem;
     align-items: center;
   }
@@ -275,10 +378,17 @@ a {
     display: flex;
     flex-direction: column;
   }
+  .btn_card {
+    width: 64%;
+  }
   .card_app div {
     gap: 0;
     flex-wrap: nowrap;
     align-items: flex-start;
+  }
+  .strategic > div {
+    flex-wrap: nowrap;
+    flex-direction: row;
   }
   .d_lg_flex {
     gap: 0;
