@@ -133,7 +133,7 @@ header nav {
 a {
   text-decoration: none;
   color: var(--rly--light);
-  margin-right: 1rem;
+
   font-size: 1rem;
 }
 /* end header */
@@ -335,9 +335,78 @@ a {
   right: 105px;
 }
 /* end about */
+/* free */
+.free {
+  background-color: var(--rly--secondary);
+  margin-top: 2.25rem;
+  padding-top: 2.25rem;
+  padding-bottom: 3.25rem;
+  color: var(--rly--light);
+  text-align: center;
+}
+.free_text {
+  font-weight: 100;
+  text-transform: uppercase;
+}
+.free h3 {
+  font-size: 1.8rem;
+  padding-bottom: 1rem;
+}
+.free h2 {
+  color: var(--rly--text--footer);
+  font-size: 4rem;
+  padding-bottom: 1rem;
+}
+.free p {
+  line-height: 1.5rem;
+  padding-bottom: 1.25rem;
+}
+.free_btn {
+  background-color: var(--rly--light);
+  color: var(--rly--secondary);
+  padding: 0.6rem 2rem;
+}
+.copyright {
+  margin-top: 1.25rem;
+}
+.copyright span {
+  font-size: 0.8rem;
+}
+.copyright a {
+  text-decoration: underline;
+  font-size: 0.8rem;
+}
+/* end free */
+/* end main */
+
+/* footer */
+.footer_content {
+  padding-top: 1.25rem;
+  padding-bottom: 2rem;
+  text-align: center;
+}
+.footer_content p {
+  color: var(--rly--light);
+  padding-bottom: 2rem;
+  font-size: 0.8rem;
+}
+.footer_content a {
+  text-decoration: underline;
+  color: var(--rly--secondary);
+}
+.footer_content span {
+  color: var(--rly--light);
+}
+/* end footer */
 /* media query */
 
 @media screen and (min-width: 800px) {
+  .container {
+    width: 90%;
+  }
+  .container_small {
+    width: 60%;
+  }
   .col_md_12 {
     width: 100%;
     padding: 2rem 1.5rem;
@@ -352,12 +421,12 @@ a {
   }
   .col_md_6 {
     width: calc((100% / 12) * 6 - 16px);
-    padding: 0.625rem;
+    padding: 1.625rem;
     margin: 10px 8px;
   }
   .col_md_4 {
     width: calc((100% / 12) * 4 - 16px);
-    padding: 1.625rem;
+    padding: 0.625rem;
     margin: 10px 8px;
     justify-content: flex-start;
   }
@@ -403,11 +472,20 @@ a {
   }
   .marks {
     top: 44px;
-    right: 92px;
+    right: 8px;
   }
 }
 
 @media screen and (min-width: 1200px) {
+  .container {
+    width: 80%;
+  }
+  .strategic .container {
+    width: 60%;
+  }
+  .container_small {
+    width: 40%;
+  }
   .d_lg_block {
     display: block;
   }
@@ -426,6 +504,9 @@ a {
   .d_lg_column {
     display: flex;
     flex-direction: column;
+  }
+  .menu_desktop a {
+    margin-right: 1rem;
   }
   .btn_card {
     width: 64%;
@@ -450,6 +531,10 @@ a {
   }
   .strategic_card {
     margin-top: 10rem;
+  }
+  .marks {
+    top: 44px;
+    right: 100px;
   }
 }
 /* end media query */
