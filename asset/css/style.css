@@ -305,7 +305,6 @@ a {
 .about {
   margin-top: 1.25rem;
   margin-bottom: 1.5rem;
-  position: relative;
 }
 .about h2 {
   color: var(--rly--secondary);
@@ -327,6 +326,11 @@ a {
   font-weight: 300;
   padding: 0.6rem 1rem;
 }
+.img_about_container {
+  width: 10.25rem;
+  height: 10.25rem;
+  position: relative;
+}
 .img_about {
   width: 10.25rem;
   height: 10.25rem;
@@ -335,8 +339,8 @@ a {
 }
 .marks {
   position: absolute;
-  top: 17px;
-  right: 112px;
+  right: -23px;
+  top: 25px;
 }
 
 /* end about */
@@ -479,10 +483,6 @@ a {
   .about_content {
     flex-wrap: nowrap;
   }
-  .marks {
-    top: 44px;
-    right: 65px;
-  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -553,10 +553,6 @@ a {
 
   .strategic_card {
     margin-top: 10rem;
-  }
-  .marks {
-    top: 44px;
-    right: 165px;
   }
 }
 /* end media query */
